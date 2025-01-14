@@ -1,0 +1,275 @@
+<template>
+  <v-app>
+    <!-- Hero Section -->
+    <v-container fluid class="hero-section pa-12 bg-primary" id="about">
+      <v-row align="center" justify="center">
+        <v-col cols="12" md="8" class="text-center text-white">
+          <h1 class="text-h2 font-weight-bold mb-4">PANG ZI HONG</h1>
+          <p class="text-h5 mb-6">B.Comp.Sc. (Hons)</p>
+          <p class="text-body-1 mx-auto" style="max-width: 800px">
+            As a dedicated computer science graduate, I aim to contribute
+            significantly in the domains of Frontend Development, Software
+            Engineering, and Database Management.
+          </p>
+          <v-row class="mt-6" justify="center">
+            <v-col cols="auto">
+              <v-btn
+                prepend-icon="mdi-phone"
+                variant="outlined"
+                color="white"
+                class="ma-2"
+                href="https://wa.me/601123009600"
+              >
+                +6011-23009600
+              </v-btn>
+            </v-col>
+            <v-col cols="auto">
+              <v-btn
+                prepend-icon="mdi-email"
+                variant="outlined"
+                color="white"
+                class="ma-2"
+                href="mailto:pangzihong2@gmail.com"
+              >
+                pangzihong2@gmail.com
+              </v-btn>
+            </v-col>
+            <v-col cols="auto">
+              <v-btn
+                prepend-icon="mdi-linkedin"
+                variant="outlined"
+                color="white"
+                class="ma-2"
+                href="https://www.linkedin.com/in/pang-zi-hong-5577761b7/"
+                target="_blank"
+              >
+                LinkedIn
+              </v-btn>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+    </v-container>
+
+    <v-container class="py-12">
+      <!-- Education Section -->
+      <v-row class="mb-12">
+        <v-col cols="12">
+          <h2 class="text-h4 mb-6 text-center" id="education">Education</h2>
+          <v-card elevation="2">
+            <v-card-text class="text-center pa-6">
+              <h3 class="text-h5 mb-2">UNIVERSTIY MALAYSIA SABAH</h3>
+              <p class="text-subtitle-1 mb-2">
+                BACHELOR OF COMPUTER SCIENCE WITH HONOURS (NETWORK ENGINEERING)
+              </p>
+              <p class="mb-2">2020 - 2024</p>
+              <v-chip color="primary" class="mt-2">CGPA 3.56</v-chip>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+
+      <!-- Technical Skills Section -->
+      <v-row class="mb-12">
+        <v-col cols="12">
+          <h2 class="text-h4 mb-6 text-center" id="skills">Technical Expertise</h2>
+          <v-row>
+            <v-col cols="12" md="6" lg="3">
+              <v-card height="100%">
+                <v-card-title class="text-center">
+                  <v-icon color="primary" size="large" class="mb-2"
+                    >mdi-code-tags</v-icon
+                  >
+                  <div>Programming</div>
+                </v-card-title>
+                <v-card-text class="text-center">
+                  <v-chip-group>
+                    <v-chip
+                      v-for="skill in [
+                        'C++',
+                        'Python',
+                        'Java',
+                        'SQL',
+                        'HTML',
+                        'CSS',
+                        'JavaScript',
+                      ]"
+                      :key="skill"
+                    >
+                      {{ skill }}
+                    </v-chip>
+                  </v-chip-group>
+                </v-card-text>
+              </v-card>
+            </v-col>
+            <v-col cols="12" md="6" lg="3">
+              <v-card height="100%">
+                <v-card-title class="text-center">
+                  <v-icon color="primary" size="large" class="mb-2"
+                    >mdi-web</v-icon
+                  >
+                  <div>Frameworks</div>
+                </v-card-title>
+                <v-card-text class="text-center">
+                  <v-chip-group>
+                    <v-chip
+                      v-for="framework in [
+                        'Django',
+                        'WordPress',
+                        'Vue.js',
+                        'Node.js',
+                      ]"
+                      :key="framework"
+                    >
+                      {{ framework }}
+                    </v-chip>
+                  </v-chip-group>
+                </v-card-text>
+              </v-card>
+            </v-col>
+            <v-col cols="12" md="6" lg="3">
+              <v-card height="100%">
+                <v-card-title class="text-center">
+                  <v-icon color="primary" size="large" class="mb-2"
+                    >mdi-database</v-icon
+                  >
+                  <div>Databases</div>
+                </v-card-title>
+                <v-card-text class="text-center">
+                  <v-chip-group>
+                    <v-chip
+                      v-for="db in ['MySQL', 'SQLite', 'PostgreSQL']"
+                      :key="db"
+                    >
+                      {{ db }}
+                    </v-chip>
+                  </v-chip-group>
+                </v-card-text>
+              </v-card>
+            </v-col>
+            <v-col cols="12" md="6" lg="3">
+              <v-card height="100%">
+                <v-card-title class="text-center">
+                  <v-icon color="primary" size="large" class="mb-2"
+                    >mdi-tools</v-icon
+                  >
+                  <div>Tools</div>
+                </v-card-title>
+                <v-card-text class="text-center">
+                  <v-chip-group>
+                    <v-chip
+                      v-for="tool in [
+                        'SEO',
+                        'cPanel',
+                        'Plesk',
+                        'Photoshop',
+                        'Figma',
+                      ]"
+                      :key="tool"
+                    >
+                      {{ tool }}
+                    </v-chip>
+                  </v-chip-group>
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+
+      <!-- Work Experience -->
+      <v-row class="mb-12">
+        <v-col cols="12">
+          <h2 class="text-h4 mb-6 text-center" id="experience">Work Experience</h2>
+          <v-timeline>
+            <v-timeline-item dot-color="primary" size="small">
+              <template v-slot:opposite> April 2024 – September 2024 </template>
+              <v-card>
+                <v-card-title>Web Developer Intern</v-card-title>
+                <v-card-subtitle>Madex Group Sdn. Bhd.</v-card-subtitle>
+                <v-card-text>
+                  <ul>
+                    <li>
+                      Designed bespoke client websites utilizing WordPress and
+                      modern design principles.
+                    </li>
+                    <li>
+                      Resolved IT issues, optimized system functionality, and
+                      implemented SEO strategies.
+                    </li>
+                    <li>
+                      Achieved consistent on-time delivery of projects,
+                      surpassing client expectations.
+                    </li>
+                    <li>
+                      Contributed to sales objectives by employing strategic
+                      upselling techniques.
+                    </li>
+                  </ul>
+                </v-card-text>
+              </v-card>
+            </v-timeline-item>
+          </v-timeline>
+        </v-col>
+      </v-row>
+
+      <!-- Projects -->
+      <v-row>
+        <v-col cols="12">
+          <h2 class="text-h4 mb-6 text-center" id="projects">Projects</h2>
+          <v-row>
+            <v-col cols="12" md="6">
+              <v-card href="https://noura.com.sg/" height="100%">
+                <v-card-title>Noura Beauty Spa Website</v-card-title>
+                <v-card-text>
+                  <p class="mb-4">
+                    Developed a dynamic WordPress platform encompassing a
+                    homepage, shop page, and service sections.
+                  </p>
+                  <v-chip color="primary" class="mr-2">WordPress</v-chip>
+                  <v-chip color="primary">UI/UX Design</v-chip>
+                  <p class="mt-4"><strong>Timeline:</strong> 1 month</p>
+                </v-card-text>
+              </v-card>
+            </v-col>
+            <v-col cols="12" md="6">
+              <v-card height="100%">
+                <v-card-title>TeamUp - Sports Connection Platform</v-card-title>
+                <v-card-text>
+                  <p class="mb-4">
+                    Web-based solution enabling users to connect with potential
+                    sports partners based on proximity and interests.
+                  </p>
+                  <v-chip color="primary" class="mr-2">Python</v-chip>
+                  <v-chip color="primary" class="mr-2">Django</v-chip>
+                  <v-chip color="primary">SQLite</v-chip>
+                  <p class="mt-4"><strong>Timeline:</strong> 1 year</p>
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+    </v-container>
+
+    <!-- Languages Section in Footer -->
+    <v-footer class="bg-grey-lighten-3">
+      <v-container>
+        <v-row justify="center" align="center">
+          <v-col cols="auto">
+            <span class="mr-4">Languages:</span>
+            <v-chip class="ma-1">English</v-chip>
+            <v-chip class="ma-1">Chinese</v-chip>
+            <v-chip class="ma-1">Malay</v-chip>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-footer>
+  </v-app>
+</template>
+
+<style scoped>
+.hero-section {
+  background-color: #4c89c7;
+}
+</style>
